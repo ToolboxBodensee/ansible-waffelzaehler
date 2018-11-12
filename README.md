@@ -1,5 +1,5 @@
  Ansible Waffelzähler Playbook Sammlung
-==========================================0
+==========================================
 ![C3WOC](https://c3woc.de/images/logo/c3woc.svg "C3WOC")
 
 Der "Waffelzähler" ist ein Sensor der zählt, wie oft das Waffeleisen sich öffnet. 
