@@ -1,10 +1,21 @@
 ---
 
+- name: initially setup os
+  hosts: status.c3woc.de
+  roles:
+    - ssh-authorisation
+    - sshd
+  tags:
+   - init
+  vars:
+    ansible_user: 'root'
+
+
 - name: install and configure os
   hosts: status.c3woc.de
   roles:
-    - sshd
     - base-packages
+    - home_enviroment
   tags:
    - os
 

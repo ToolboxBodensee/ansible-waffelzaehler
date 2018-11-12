@@ -1,0 +1,9 @@
+---
+
+users:
+  l3d:
+    - l3d
+  ansible:
+    - l3d
+
+hostname: 'status.c3woc.de'
