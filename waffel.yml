@@ -1,0 +1,19 @@
+---
+
+- name: install and configure os
+  hosts: status.c3woc.de
+  roles:
+    - sshd
+    - base-packages
+  tags:
+   - os
+
+
+- name: Deploy grafana
+  hosts: status.c3woc.de
+  roles:
+    - cloudalchemy.grafana
+  tags:
+   - grafana
+
+
