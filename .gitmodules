@@ -4,3 +4,6 @@
 [submodule "roles/sshd"]
 	path = roles/sshd
 	url = https://github.com/DO1JLR/role_sshd.git
+[submodule "roles/ssh-authorisation"]
+	path = roles/ssh-authorisation
+	url = https://github.com/ffbsee/role-ssh_authorized_keys.git
