@@ -1,0 +1,3 @@
+[submodule "roles/base-packages"]
+	path = roles/base-packages
+	url = https://github.com/ffbsee/role-base_packages.git
