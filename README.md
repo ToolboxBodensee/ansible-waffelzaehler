@@ -30,4 +30,10 @@ ansible-playbook waffel.yml
 
 ```
 
+ Verschlüsselte variable:
+-------------------------
+Es gibt einige verschlüsselte variabeln in diesem Playbook. Diese werden mit hilfe eines [Ansible Vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html) verschlüsselt. Der Key zum entschlüsseln liegt in einem privaten Submodule, das daher leider nicht jedem zur verfügung steht. Sorry.
 
+```bash
+ansible-playbook waffel.yml --vault-id vars/vault-passwort/c3woc-vault
+```
