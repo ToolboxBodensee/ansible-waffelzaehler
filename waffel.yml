@@ -26,5 +26,6 @@
     - cloudalchemy.grafana
   tags:
    - grafana
-
+  vars_files:
+    - vars/grafana.yml
 

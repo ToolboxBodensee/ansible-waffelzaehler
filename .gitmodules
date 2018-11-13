@@ -7,3 +7,6 @@
 [submodule "roles/ssh-authorisation"]
 	path = roles/ssh-authorisation
 	url = https://github.com/ffbsee/role-ssh_authorized_keys.git
+[submodule "vars/vault-passwort"]
+	path = vars/vault-passwort
+	url = gitea@gitea.see-base.de:C3WOC/ansible-vault-passwort.git
