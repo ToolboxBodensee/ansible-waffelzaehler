@@ -29,3 +29,10 @@
   vars_files:
     - vars/grafana.yml
 
+- name: Deploy nginx
+  hosts: status.c3woc.de
+  roles:
+    - le-nginx
+  tags:
+   - nginx
+

@@ -7,3 +7,6 @@ users:
     - l3d
 
 hostname: 'status.c3woc.de'
+grafana_domain: "{{ hostname }}"
+domain_name:  "{{ hostname }}"
+
