@@ -19,7 +19,6 @@
   tags:
    - os
 
-
 - name: Deploy grafana
   hosts: status.c3woc.de
   roles:
@@ -28,6 +27,13 @@
    - grafana
   vars_files:
     - vars/grafana.yml
+
+- name: Deploy influxdb
+  hosts: status.c3woc.de
+  roles:
+    - influxdb
+  tags:
+   - influxdb
 
 - name: Deploy nginx
   hosts: status.c3woc.de
