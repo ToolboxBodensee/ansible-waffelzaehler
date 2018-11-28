@@ -12,4 +12,4 @@
 	url = gitea@gitea.see-base.de:C3WOC/ansible-vault-passwort.git
 [submodule "roles/influxdb"]
 	path = roles/influxdb
-	url = https://github.com/mtchavez/ansible-influxdb.git
+	url = https://gitea.see-base.de/C3WOC/role_influxdb.git
