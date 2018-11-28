@@ -3,12 +3,20 @@
 - name: initially setup os
   hosts: status.c3woc.de
   roles:
-    - ssh-authorisation
-    - sshd
+      #   - ssh-authorisation
+   - sshd
   tags:
    - init
   vars:
     ansible_user: 'root'
+
+- name: initially setup os
+  hosts: localhost
+  connection: local
+  roles:
+   - ssh_fngerprint
+  tags:
+   - init
 
 
 - name: install and configure os
