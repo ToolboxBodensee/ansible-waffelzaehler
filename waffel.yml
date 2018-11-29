@@ -27,12 +27,6 @@
   vars_files:
     - vars/grafana.yml
 
-- name: Deploy influxdb
-  hosts: status.c3woc.de
-  roles:
-    - influxdb
-  tags:
-   - influxdb
 
 - name: Deploy nginx
   hosts: status.c3woc.de
@@ -41,3 +35,10 @@
   tags:
    - nginx
 
+- name: Deploy influxdb
+  hosts: status.c3woc.de
+  roles:
+    - rossmcdonald.influxdb
+  tags:
+   - influxdb
+ 

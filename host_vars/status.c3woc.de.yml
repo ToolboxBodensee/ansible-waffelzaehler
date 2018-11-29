@@ -17,3 +17,8 @@ grafana_security:
   admin_user: "{{ vault_grafana_security.admin_user }}"
   admin_password: "{{ vault_grafana_security.admin_password }}"
 
+
+influxdb_http_https_certificate: "/etc/letsencrypt/live/{{ domain_name }}/privkey.pem"
+influxdb_http_https_enabled: "true"
+
+ 
