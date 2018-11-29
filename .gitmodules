@@ -10,6 +10,3 @@
 [submodule "vars/vault-passwort"]
 	path = vars/vault-passwort
 	url = gitea@gitea.see-base.de:C3WOC/ansible-vault-passwort.git
-[submodule "roles/influxdb"]
-	path = roles/influxdb
-	url = https://gitea.see-base.de/C3WOC/role_influxdb.git
