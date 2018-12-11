@@ -41,4 +41,7 @@
     - influxdb
   tags:
    - influxdb
- 
+  vars_files:
+   - vars/grafana.yml
+
+

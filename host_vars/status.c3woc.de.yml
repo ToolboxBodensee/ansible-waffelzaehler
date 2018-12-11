@@ -21,4 +21,31 @@ grafana_security:
 influxdb_http_https_certificate: "/etc/letsencrypt/live/{{ domain_name }}/privkey.pem"
 influxdb_http_https_enabled: "true"
 
- 
+############
+# InfluxDB #
+############
+
+manala_influxdb_databases:
+  - waffel
+
+manala_influxdb_users:
+    #  - database: waffel
+    # name:     waffel
+    # password: 
+
+manala_influxdb_privileges:
+  - database: waffel
+    user:     waffel
+    grant:    ALL
+
+manala_influxdb_config:
+  - reporting-disabled: true
+  # see: https://docs.influxdata.com/influxdb/v0.13/write_protocols/udp
+  - udp:
+    - enabled: true
+    - bind-address: :8089
+    - database: stats
+    - batch-size: 5000
+    - batch-timeout: 1s
+    - batch-pending: 10
+    - read-buffer: 0 
