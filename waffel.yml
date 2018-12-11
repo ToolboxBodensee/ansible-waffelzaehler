@@ -38,7 +38,7 @@
 - name: Deploy influxdb
   hosts: status.c3woc.de
   roles:
-    - rossmcdonald.influxdb
+    - influxdb
   tags:
    - influxdb
  
