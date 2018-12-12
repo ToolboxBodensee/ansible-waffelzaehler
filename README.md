@@ -2,6 +2,10 @@
 ==========================================
 ![C3WOC](https://c3woc.de/images/logo/c3woc.svg "C3WOC")
 
+```
+currently no longer developed
+```
+
 Der "Waffelzähler" ist ein Sensor der zählt, wie oft das Waffeleisen sich öffnet. 
 Diese Daten sollen an ein [Grafana](https://status.c3woc.de) gesendet werden,
 dass dann bunte Waffelgraphen anzeigt. 
