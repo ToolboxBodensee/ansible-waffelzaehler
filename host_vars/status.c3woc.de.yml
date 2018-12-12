@@ -9,10 +9,6 @@ users:
 hostname: 'status.c3woc.de'
 grafana_domain: "{{ hostname }}"
 domain_name:  "{{ hostname }}"
-grafana_auth:
-  anonymous:
-    org_name: "C3WOC"
-    org_role: Viewer
 grafana_security:
   admin_user: "{{ vault_grafana_security.admin_user }}"
   admin_password: "{{ vault_grafana_security.admin_password }}"
@@ -21,12 +17,12 @@ grafana_security:
 influxdb_http_https_certificate: "/etc/letsencrypt/live/{{ domain_name }}/privkey.pem"
 influxdb_http_https_enabled: "true"
 
-grafana_auth: {}
-  disable_login_form: true
-  disable_signout_menu: false
+grafana_auth: 
+  disable_login_form: false
+  disable_signout_menu: false 
   anonymous:
     org_name: "C3WOC"
-    org_role: Viewer
+    org_role: Editor
 
 
 ############
@@ -37,9 +33,9 @@ manala_influxdb_databases:
   - waffel
 
 # manala_influxdb_users:
-    #  - database: waffel
-    # name:     waffel
-    # password: 
+#   - database: waffel
+#     name:     waffel
+#     password: ********
 
 manala_influxdb_privileges:
   - database: waffel
